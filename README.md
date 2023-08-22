@@ -17,3 +17,6 @@ Cogs.event.py
 ```
 
 3.運行`main.py`
+
+
+***完成!***
