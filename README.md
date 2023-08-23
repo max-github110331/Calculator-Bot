@@ -12,8 +12,9 @@ pip install py-cord
 ```
 main.py
 calculator.py
-Cogs.commands.py
-Cogs.event.py
+Cogs:
+    commands.py
+    event.py
 ```
 
 3.運行`main.py`
