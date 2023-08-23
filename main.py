@@ -1,6 +1,8 @@
 import discord
 from discord.ext import commands
-import os
+
+
+token=""
 
 
 bot=commands.Bot(intents=discord.Intents.all())
@@ -14,4 +16,4 @@ for filename in os.listdir("./Cogs"):
 print("========================================")
 
 
-bot.run(os.getenv("token"))
+bot.run(token)
