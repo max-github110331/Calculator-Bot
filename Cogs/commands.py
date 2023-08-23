@@ -53,7 +53,11 @@ class View(discord.ui.View):
 
     @discord.ui.button(label="C", row=0, style=discord.ButtonStyle.danger)
     async def callback_del(self, button, interaction):
-        calcu=await self.calculator.delete()
+        if "+" not in self.calaulator.calcu and "-" not in self.calaulator.calcu and "*" not in self.calaulator.calcu and "/" not in self.calaulator.calcu:
+            self.calculator.calcu=""
+            calcu=""
+        else:
+            calcu=await self.calculator.delete()
         embed=discord.Embed(
             color=discord.Colour.embed_background(),
             title="🧮｜計數機",
