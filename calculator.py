@@ -14,4 +14,8 @@ class Calculator:
 
 
     async def equal_to(self):
-        return str(eval(self.calcu))
+        try:
+            ans=str(eval(self.calcu))
+        except:
+            ans="ERROR!"
+        return ans
