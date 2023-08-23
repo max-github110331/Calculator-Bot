@@ -249,7 +249,10 @@ class View(discord.ui.View):
     @discord.ui.button(label="=", row=4, style=discord.ButtonStyle.success)
     async def callback_(self, button, interaction):
         calcu=await self.calculator.equal_to()
-        self.calculator.calcu=calcu
+        if calcu == "ERROR!":
+            self.calculator.calcu=""
+        else:
+            self.calculator.calcu=calcu
         embed=discord.Embed(
             color=discord.Colour.embed_background(),
             title="🧮｜計數機",
