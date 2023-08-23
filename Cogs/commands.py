@@ -9,11 +9,13 @@ class View(discord.ui.View):
             timeout=None
         )
         self.calculator=calculator
+        self.enter=False
         self.bot=bot
 
 
     @discord.ui.button(label="(", row=0, style=discord.ButtonStyle.primary)
     async def callback_open_bracket(self, button, interaction):
+        self.enter=False
         calcu=await self.calculator.appead("(")
         embed=discord.Embed(
             color=discord.Colour.embed_background(),
@@ -27,6 +29,7 @@ class View(discord.ui.View):
 
     @discord.ui.button(label=")", row=0, style=discord.ButtonStyle.primary)
     async def callback_close_bracket(self, button, interaction):
+        self.enter=False
         calcu=await self.calculator.appead(")")
         embed=discord.Embed(
             color=discord.Colour.embed_background(),
@@ -40,6 +43,7 @@ class View(discord.ui.View):
 
     @discord.ui.button(label="%", row=0, style=discord.ButtonStyle.primary)
     async def callback_percentage(self, button, interaction):
+        self.enter=False
         calcu=await self.calculator.appead("/100")
         embed=discord.Embed(
             color=discord.Colour.embed_background(),
@@ -53,7 +57,12 @@ class View(discord.ui.View):
 
     @discord.ui.button(label="C", row=0, style=discord.ButtonStyle.danger)
     async def callback_del(self, button, interaction):
-        calcu=await self.calculator.delete()
+        if self.enter == True:
+            self.calculator.calcu=""
+            calcu=""
+        else:
+            calcu=await self.calculator.delete()
+        self.enter=False
         embed=discord.Embed(
             color=discord.Colour.embed_background(),
             title="🧮｜計數機",
@@ -66,6 +75,7 @@ class View(discord.ui.View):
 
     @discord.ui.button(label="7", row=1, style=discord.ButtonStyle.secondary)
     async def callback_7(self, button, interaction):
+        self.enter=False
         calcu=await self.calculator.appead("7")
         embed=discord.Embed(
             color=discord.Colour.embed_background(),
@@ -79,6 +89,7 @@ class View(discord.ui.View):
     
     @discord.ui.button(label="8", row=1, style=discord.ButtonStyle.secondary)
     async def callback_8(self, button, interaction):
+        self.enter=False
         calcu=await self.calculator.appead("8")
         embed=discord.Embed(
             color=discord.Colour.embed_background(),
@@ -92,6 +103,7 @@ class View(discord.ui.View):
 
     @discord.ui.button(label="9", row=1, style=discord.ButtonStyle.secondary)
     async def callback_9(self, button, interaction):
+        self.enter=False
         calcu=await self.calculator.appead("9")
         embed=discord.Embed(
             color=discord.Colour.embed_background(),
@@ -105,6 +117,7 @@ class View(discord.ui.View):
 
     @discord.ui.button(label="÷", row=1, style=discord.ButtonStyle.primary)
     async def callback_divide(self, button, interaction):
+        self.enter=False
         calcu=await self.calculator.appead("/")
         embed=discord.Embed(
             color=discord.Colour.embed_background(),
@@ -118,6 +131,7 @@ class View(discord.ui.View):
 
     @discord.ui.button(label="4", row=2, style=discord.ButtonStyle.secondary)
     async def callback_4(self, button, interaction):
+        self.enter=False
         calcu=await self.calculator.appead("4")
         embed=discord.Embed(
             color=discord.Colour.embed_background(),
@@ -131,6 +145,7 @@ class View(discord.ui.View):
 
     @discord.ui.button(label="5", row=2, style=discord.ButtonStyle.secondary)
     async def callback_5(self, button, interaction):
+        self.enter=False
         calcu=await self.calculator.appead("5")
         embed=discord.Embed(
             color=discord.Colour.embed_background(),
@@ -144,6 +159,7 @@ class View(discord.ui.View):
 
     @discord.ui.button(label="6", row=2, style=discord.ButtonStyle.secondary)
     async def callback_6(self, button, interaction):
+        self.enter=False
         calcu=await self.calculator.appead("6")
         embed=discord.Embed(
             color=discord.Colour.embed_background(),
@@ -157,6 +173,7 @@ class View(discord.ui.View):
 
     @discord.ui.button(label="×", row=2, style=discord.ButtonStyle.primary)
     async def callback_multiply(self, button, interaction):
+        self.enter=False
         calcu=await self.calculator.appead("*")
         embed=discord.Embed(
             color=discord.Colour.embed_background(),
@@ -170,6 +187,7 @@ class View(discord.ui.View):
 
     @discord.ui.button(label="1", row=3, style=discord.ButtonStyle.secondary)
     async def callback_1(self, button, interaction):
+        self.enter=False
         calcu=await self.calculator.appead("1")
         embed=discord.Embed(
             color=discord.Colour.embed_background(),
@@ -183,6 +201,7 @@ class View(discord.ui.View):
 
     @discord.ui.button(label="2", row=3, style=discord.ButtonStyle.secondary)
     async def callback_2(self, button, interaction):
+        self.enter=False
         calcu=await self.calculator.appead("2")
         embed=discord.Embed(
             color=discord.Colour.embed_background(),
@@ -196,6 +215,7 @@ class View(discord.ui.View):
 
     @discord.ui.button(label="3", row=3, style=discord.ButtonStyle.secondary)
     async def callback_3(self, button, interaction):
+        self.enter=False
         calcu=await self.calculator.appead("3")
         embed=discord.Embed(
             color=discord.Colour.embed_background(),
@@ -209,6 +229,7 @@ class View(discord.ui.View):
 
     @discord.ui.button(label="-", row=3, style=discord.ButtonStyle.primary)
     async def callback_reduce(self, button, interaction):
+        self.enter=False
         calcu=await self.calculator.appead("-")
         embed=discord.Embed(
             color=discord.Colour.embed_background(),
@@ -222,6 +243,7 @@ class View(discord.ui.View):
 
     @discord.ui.button(label=".", row=4, style=discord.ButtonStyle.primary)
     async def callback_point(self, button, interaction):
+        self.enter=False
         calcu=await self.calculator.appead(".")
         embed=discord.Embed(
             color=discord.Colour.embed_background(),
@@ -235,6 +257,7 @@ class View(discord.ui.View):
 
     @discord.ui.button(label="0", row=4, style=discord.ButtonStyle.secondary)
     async def callback_0(self, button, interaction):
+        self.enter=False
         calcu=await self.calculator.appead("0")
         embed=discord.Embed(
             color=discord.Colour.embed_background(),
@@ -248,6 +271,7 @@ class View(discord.ui.View):
 
     @discord.ui.button(label="=", row=4, style=discord.ButtonStyle.success)
     async def callback_(self, button, interaction):
+        self.enter=True
         calcu=await self.calculator.equal_to()
         if calcu == "ERROR!":
             self.calculator.calcu=""
@@ -265,6 +289,7 @@ class View(discord.ui.View):
 
     @discord.ui.button(label="+", row=4, style=discord.ButtonStyle.primary)
     async def callback_plus(self, button, interaction):
+        self.enter=False
         calcu=await self.calculator.appead("+")
         embed=discord.Embed(
             color=discord.Colour.embed_background(),
