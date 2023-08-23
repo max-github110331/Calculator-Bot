@@ -18,7 +18,7 @@ class View(discord.ui.View):
         embed=discord.Embed(
             color=discord.Colour.embed_background(),
             title="🧮｜計數機",
-            description=f"```{calcu}```"
+            description=f"```{calcu} ```"
         )
         await interaction.response.edit_message(
             embed=embed
@@ -31,7 +31,7 @@ class View(discord.ui.View):
         embed=discord.Embed(
             color=discord.Colour.embed_background(),
             title="🧮｜計數機",
-            description=f"```{calcu}```"
+            description=f"```{calcu} ```"
         )
         await interaction.response.edit_message(
             embed=embed
@@ -44,7 +44,7 @@ class View(discord.ui.View):
         embed=discord.Embed(
             color=discord.Colour.embed_background(),
             title="🧮｜計數機",
-            description=f"```{calcu}```"
+            description=f"```{calcu} ```"
         )
         await interaction.response.edit_message(
             embed=embed
@@ -57,7 +57,7 @@ class View(discord.ui.View):
         embed=discord.Embed(
             color=discord.Colour.embed_background(),
             title="🧮｜計數機",
-            description=f"```{calcu}```"
+            description=f"```{calcu} ```"
         )
         await interaction.response.edit_message(
             embed=embed
@@ -70,7 +70,7 @@ class View(discord.ui.View):
         embed=discord.Embed(
             color=discord.Colour.embed_background(),
             title="🧮｜計數機",
-            description=f"```{calcu}```"
+            description=f"```{calcu} ```"
         )
         await interaction.response.edit_message(
             embed=embed
@@ -83,7 +83,7 @@ class View(discord.ui.View):
         embed=discord.Embed(
             color=discord.Colour.embed_background(),
             title="🧮｜計數機",
-            description=f"```{calcu}```"
+            description=f"```{calcu} ```"
         )
         await interaction.response.edit_message(
             embed=embed
@@ -96,7 +96,7 @@ class View(discord.ui.View):
         embed=discord.Embed(
             color=discord.Colour.embed_background(),
             title="🧮｜計數機",
-            description=f"```{calcu}```"
+            description=f"```{calcu} ```"
         )
         await interaction.response.edit_message(
             embed=embed
@@ -109,7 +109,7 @@ class View(discord.ui.View):
         embed=discord.Embed(
             color=discord.Colour.embed_background(),
             title="🧮｜計數機",
-            description=f"```{calcu}```"
+            description=f"```{calcu} ```"
         )
         await interaction.response.edit_message(
             embed=embed
@@ -122,7 +122,7 @@ class View(discord.ui.View):
         embed=discord.Embed(
             color=discord.Colour.embed_background(),
             title="🧮｜計數機",
-            description=f"```{calcu}```"
+            description=f"```{calcu} ```"
         )
         await interaction.response.edit_message(
             embed=embed
@@ -135,7 +135,7 @@ class View(discord.ui.View):
         embed=discord.Embed(
             color=discord.Colour.embed_background(),
             title="🧮｜計數機",
-            description=f"```{calcu}```"
+            description=f"```{calcu} ```"
         )
         await interaction.response.edit_message(
             embed=embed
@@ -148,7 +148,7 @@ class View(discord.ui.View):
         embed=discord.Embed(
             color=discord.Colour.embed_background(),
             title="🧮｜計數機",
-            description=f"```{calcu}```"
+            description=f"```{calcu} ```"
         )
         await interaction.response.edit_message(
             embed=embed
@@ -161,7 +161,7 @@ class View(discord.ui.View):
         embed=discord.Embed(
             color=discord.Colour.embed_background(),
             title="🧮｜計數機",
-            description=f"```{calcu}```"
+            description=f"```{calcu} ```"
         )
         await interaction.response.edit_message(
             embed=embed
@@ -174,7 +174,7 @@ class View(discord.ui.View):
         embed=discord.Embed(
             color=discord.Colour.embed_background(),
             title="🧮｜計數機",
-            description=f"```{calcu}```"
+            description=f"```{calcu} ```"
         )
         await interaction.response.edit_message(
             embed=embed
@@ -187,7 +187,7 @@ class View(discord.ui.View):
         embed=discord.Embed(
             color=discord.Colour.embed_background(),
             title="🧮｜計數機",
-            description=f"```{calcu}```"
+            description=f"```{calcu} ```"
         )
         await interaction.response.edit_message(
             embed=embed
@@ -200,7 +200,7 @@ class View(discord.ui.View):
         embed=discord.Embed(
             color=discord.Colour.embed_background(),
             title="🧮｜計數機",
-            description=f"```{calcu}```"
+            description=f"```{calcu} ```"
         )
         await interaction.response.edit_message(
             embed=embed
@@ -213,7 +213,7 @@ class View(discord.ui.View):
         embed=discord.Embed(
             color=discord.Colour.embed_background(),
             title="🧮｜計數機",
-            description=f"```{calcu}```"
+            description=f"```{calcu} ```"
         )
         await interaction.response.edit_message(
             embed=embed
@@ -226,7 +226,7 @@ class View(discord.ui.View):
         embed=discord.Embed(
             color=discord.Colour.embed_background(),
             title="🧮｜計數機",
-            description=f"```{calcu}```"
+            description=f"```{calcu} ```"
         )
         await interaction.response.edit_message(
             embed=embed
@@ -239,7 +239,7 @@ class View(discord.ui.View):
         embed=discord.Embed(
             color=discord.Colour.embed_background(),
             title="🧮｜計數機",
-            description=f"```{calcu}```"
+            description=f"```{calcu} ```"
         )
         await interaction.response.edit_message(
             embed=embed
@@ -256,7 +256,7 @@ class View(discord.ui.View):
         embed=discord.Embed(
             color=discord.Colour.embed_background(),
             title="🧮｜計數機",
-            description=f"```{calcu}```"
+            description=f"```{calcu} ```"
         )
         await interaction.response.edit_message(
             embed=embed
@@ -269,7 +269,7 @@ class View(discord.ui.View):
         embed=discord.Embed(
             color=discord.Colour.embed_background(),
             title="🧮｜計數機",
-            description=f"```{calcu}```"
+            description=f"```{calcu} ```"
         )
         await interaction.response.edit_message(
             embed=embed
