@@ -17,7 +17,10 @@ Cogs:
     event.py
 ```
 
-3.運行`main.py`
+3.在`main.py`的`token`後填上TOKEN
+
+
+4.運行`main.py`
 
 
 ***完成!***
