@@ -3,7 +3,7 @@
 
 # 如何使用?
 1.在終端機輸入
-```shell
+```sh
 pip uninstall discord discord.py -y
 pip install py-cord
 ```
