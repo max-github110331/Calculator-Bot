@@ -18,4 +18,7 @@ class Calculator:
             ans=str(eval(self.calcu))
         except:
             ans="ERROR!"
-        return ans
+        if ans.endswith(".0"):
+            return ans[:-2]
+        else:
+            return ans
